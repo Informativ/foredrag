@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+	#include <.h>
 
 	<head>
 		<meta charset="utf-8">
@@ -41,7 +42,7 @@
 			<div class="slides">
 				<!-- Første slide -->
 				<section>
-					<h1>Skolebesøk</h1>
+					<h1>Velkommen!</h1>
 					<img data-src="res/segl.png" style="background:none; border:none; box-shadow:none">
 				</section>
 
@@ -51,7 +52,7 @@
 					<ol>
 						<li class="fragment highlight-red grow">Foredrag</li>
 						<li>Omvisning</li>
-						<li>Workshop<ul><li>Arduino</li><li>Processing</li><li>3D-design</li></ul></li>
+						<li>Workshop<ul><li>micro:bit</li></ul></li>
 					</ol>
 				</section>
 
@@ -70,9 +71,7 @@
 					<section>
 						<h3>Programmering</h3>
 						<ul>
-							<li>Arduino</li>
-							<li>Processing</li>
-							<li>3D design</li>
+							<li>micro:bit</li>
 							<li>Basic programmering</li>
 						</ul>
 					</section>
@@ -144,7 +143,7 @@
 				</section>
 
 				<section>
-					<h2>Intro til IFI</h2>
+					<h2>Programmer på Ifi</h2>
 					<p class="fragment">Design, bruk og interaksjon</p>
 					<p class="fragment">Digital økonomi og ledelse</p>
 					<p class="fragment">Programmering og systemarkitektur</p>
@@ -163,8 +162,7 @@
 				</section>
 
 				<section>
-					<h2>Intro til UiO</h2>
-					<a href="http://uio.no" target="_blank">
+					<a src="http://uio.no"></iframe>
 					<img data-src="res/nettside.png" style="background:none;border:none;box-shadow:none">
 					</a>
 				</section>
@@ -181,64 +179,37 @@
 					<section>
 						<h3>Programmering</h3>
 						<ul>
-							<li>Arduino</li>
-							<li>Processing</li>
-							<li>3D design</li>
+							<li>micro:bit</li>
 							<li>Basic programmering</li>
 						</ul>
 					</section>
 				</section>
 
 			<!--Programmering-->
-				<!--Arduino-->
+				<!--micro:bit-->
 				<section>
 					<section>
-						<img data-src="res/arduino.jpg" style="background:none; border:none; box-shadow:none">
+						<img data-src="res/micro:bit.jpg" style="background:none; border:none; box-shadow:none">
 					</section>
 					<section>
-						<img data-src="res/arduinoide.png" style="background:none; border:none; box-shadow:none">
-					</section>
-					<section>
-						<a href="http://www.wired.com/2011/10/arduino-based-virtual-reality-glove/" target="_blank">
-							<img data-src="res/hand.jpg" style="background:none; border:none; box-shadow:none">
+						<a href="http://microbitgadgets.co.uk/microbit-projects/microbit-music/fruit-keyboard-project" target="_blank">
+						<img data-src="res/fruit.jpg" style="background:none; border:none; box-shadow:none">
 						</a>
 					</section>
 					<section>
-						<a href="http://www.wired.com/2013/01/wearable-arduinos/" type="_blank">
-							<img data-src="res/dress.jpg" style="background:none; border:none; box-shadow:none">
-						</a>
-					</section>
-					<section>
-						<!--<a href="" type="_blank">-->
-							<img data-src="res/quad.jpg" style="background:none; border:none; box-shadow:none">
-						<!--</a>-->
-					</section>
-				</section>
-
-				<!--Processing-->
-				<section>
-					<section>
-						<a href="http://www.processing.org" type="_blank">
-							<img data-src="res/processing.jpg" style="background:none; border:none; box-shadow:none">
-						</a>
-					</section>
-					<section>
-						<a href="http://www.openprocessing.org/">
-							<img data-src="res/openp.jpg" style="background:none; border:none; box-shadow:none">
+						<a href="http://www.bbc.co.uk/rd/blog/2015-12-micro-bit-showcase-at-mozfest-1" target="_blank">
+							<img data-src="res/Table1.jpg" style="background:none; border:none; box-shadow:none">
 						</a>
 					</section>
 				</section>
 
-				<!--TinkerCAD-->
+				<!-- Breadboard --!>
 				<section>
-					<section>
-						<a href="https://www.tinkercad.com/" type="_blank">
-							<img data-src="res/tinkercad.jpg" style="background:none; border:none; box-shadow:none">
+					<h3>Breadboard på 1-2-3</h3>
+						<a href="http://rfteststation.com/wp-content/uploads/2016/09/breadboard.jpg" target="_blank">
+							<img data-src="res/breadboard.jpg" style="background:none; border:none; box-shadow:none; width:80%;height:80%;">
 						</a>
-					</section>
-					<section>
-						<img data-src="res/tinkercadprew.jpg" style="background:none; border:none; box-shadow:none">
-					</section>
+
 				</section>
 
 				<!--How to-->
@@ -267,7 +238,7 @@
 							<li>long (større tall enn int)</li>
 						</ul>
 						<pre><code data-trim>
-int a = 5;
+a = 5;
 						</code></pre>
 					</section>
 					<section>
@@ -278,7 +249,7 @@ int a = 5;
 							<li>double (tar 64 bit, mot floats 32 bit)</li>
 						</ul>
 						<pre><code data-trim>
-float pi = 3.14;
+pi = 3.14;
 						</code></pre>
 					</section>
 					<section>
@@ -288,18 +259,8 @@ float pi = 3.14;
 							<li>En variabel som enten er sann(true) eller usann(false)</li>
 						</ul>
 						<pre><code data-trim>
-boolean awesome = true;
-boolean boring = false;
-						</code></pre>
-					</section>
-					<section>
-						<h2>Tegn</h2>
-						<ul>
-							<li>char (character)</li>
-							<li>Bokstaver, tall og andre symboler</li>
-						</ul>
-						<pre><code data-trim>
-char c = 'c';
+awesome = true;
+boring = false;
 						</code></pre>
 					</section>
 					<section>
@@ -309,7 +270,7 @@ char c = 'c';
 							<li>En sammensatt datatype</li>
 						</ul>
 						<pre><code data-trim>
-String text = "Dette er en String";
+text = "Dette er en String";
 						</code></pre>
 					</section>
 					<section>
@@ -396,90 +357,67 @@ c = 'C';
 					<section>
 						<h2>If</h2>
 						<pre><code data-trim>
-if(her er noe sant eller usant) {
+if 'her er noe sant':
 	dersom det over er sant, så gjør vi dette
-}
 						</code></pre>
 						<pre class="fragment"><code data-trim>
-if(poeng er lik 1000) {
+if 'poeng er lik 1000':
 	så få vi ekstra liv
-}
 						</code></pre>
 						<pre class="fragment"><code data-trim>
-if(poeng == 1000) {
-	liv++;
-}
+if poeng is 1000:
+	liv+=1
 						</code></pre>
 					</section>
 					<section>
 						<h2>If-else</h2>
-						<pre><code data-trim>
-if(awesome){
-	println("Du er awesome");
-} else if (awesomeLvl >= 9000){
-	println("Your lvl of awesome is over 9000");
-} else {
-	println("Du er ikke awesome");
-}
+						<pre><code data-trim class="python">
+if awesome:
+	print("Du er awesome!")
+elif awesomelvl >= 1000:
+	print("Your lvl of awesome is over 9000")
+else:
+	print("Du er ikke awesome")
 						</code></pre>
 					</section>
 					<section>
 						<h2>While-løkker</h2>
-						<pre><code data-trim class="java">
-int tall = 3;
+						<pre><code data-trim class="python">
+tall = 3;
 
-while(tall <= 10) {
-	tall++;
-}
+while tall <= 10:
+	tall+=1
 						</code></pre>
 					</section>
 					<section>
 						<h2>For-løkker</h2>
-						<pre><code data-trim class="java">
-for(int i = 0; i <= 10; i++) {
-	printf(i);
-}
+						<pre><code data-trim class="python">
+a = ['a', 'b', 'c']
+
+for c in a:
+	print(c)
 						</code></pre>
 					</section>
 					<section>
-						<h2>Bare minimal</h2>
-						<p>Arduino:</p>
-    				<pre><code data-trim>
-void setup() {
-//Koden her blir kjørt en gang (når programmet startes)
-}
-
-void loop() {
-//Koden her blir gjentatt helt til programmet avsluttes
-}
-    				</code></pre>
-						<p>Processing:</p>
-    				<pre><code data-trim>
-void setup() {
-//Koden her blir kjørt en gang (når programmet startes)
-}
-
-void draw() {
-//Koden her blir gjentatt helt til programmet avsluttes
-}
-    				</code></pre>
-					</section>
-					<section>
 						<h2>Satt sammen:</h2>
-						<pre><code data-trim>
-int liv;
-int poeng;
+						<pre><code data-trim class="python" style="line-height:normal">
+num = []
+count = 0
 
-void setup() {
-	liv = 2;
-	poeng = 0;
-}
+# while count != 100
+while count is not 100:
+	count+=1
+	num.append(count)
 
-void draw() {
-	if(poeng == 1000) {
-		liv ++;
-	}
-}
+for i in num:
+	if i % 5 == 0 and i % 3 == 0:
+		print("FizzBuzz")
+	elif i % 3 == 0:
+		print("Fizz")
+	elif i % 5 == 0:
+		print("Buzz")
+	else:
+		print(i)
 						</code></pre>
 					</section>
 				</section>
@@ -491,7 +429,7 @@ void draw() {
 					</section>
 					<section>
 						<h2>C</h2>
-						<pre><code data-trim class="cal">
+						<pre><code data-trim class="c">
 #include<stdio.h>
 
 int main(void)
@@ -595,9 +533,7 @@ len     equ $ - msg
 					<section>
 						<h3><strike>Programmering</strike></h3>
 						<ul>
-							<li><strike>Arduino</strike></li>
-							<li><strike>Processing</strike></li>
-							<li><strike>3D design</strike></li>
+							<li><strike>micro:bit</strike></li>
 							<li><strike>Basic programmering</strike></li>
 						</ul>
 					</section>
@@ -609,7 +545,7 @@ len     equ $ - msg
 					<ol>
 						<li><strike>Foredrag</strike></li>
 						<li class="fragment highlight-red grow">Omvisning</li>
-						<li>Workshop<ul><li>Arduino</li><li>Processing</li><li>3D-design</li></ul></li>
+						<li>Workshop<ul><li>micro:bit</li>
 					</ol>
 				</section>
 
@@ -619,13 +555,13 @@ len     equ $ - msg
 					<ol>
 						<li><strike>Foredrag</strike></li>
 						<li><strike>Omvisning</strike></li>
-						<li class="fragment highlight-red grow">Workshop<ul><li>Arduino</li><li>Processing</li><li>3D-design</li></ul></li>
+						<li class="fragment highlight-red grow">Workshop<ul><li>micro:bit</li></ul></li>
 					</ol>
 				</section>
 
 				<section>
-					<h2><a href="http://skolebesok.ifi.uio.no">skolebesok.ifi.uio.no</a></h2>
-					<h2><a href="http://vestera.as/processing/">vestera.as/processing</a></h2>
+					<h3><a href="http://informativ.github.io/microbit-oppgaver">informativ.github.io/microbit-oppgaver</a></h3>
+					<h2><a href="http://microbit.org/code">microbit.org/code</a></h2>
 				</section>
 
 			</div>
